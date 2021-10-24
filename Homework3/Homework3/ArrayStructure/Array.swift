@@ -25,7 +25,7 @@ struct Array<T>: Arrayable {
         self.array.append(element)
     }
 
-    mutating func pop() -> T? {
+    @discardableResult mutating func pop() -> T? {
         self.array.popLast()
     }
 
