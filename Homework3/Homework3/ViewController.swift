@@ -22,6 +22,22 @@ class ViewController: UIViewController {
         print(array)
         array.pop()
         print(array)
+
+        let militaryShipport = MilitaryShipport<Gunship>()
+        let previousMilitaryShipport = MilitaryShipport<Shuttle>()
+        let civicShipport = CivicShipport<Shuttle>()
+
+//        militaryShipport.subdivisionShipport.append(civicShipport) 
+        previousMilitaryShipport.subdivisionShipport.append(civicShipport)
+
+        let mainMilitaryShipport = AnyShipport(MilitaryShipport<Gunship>())
+        let mainCivicShipport = AnyShipport(CivicShipport<Shuttle>())
+        let generalShipport = AnyShipport(MilitaryShipport<Shuttle>())
+
+        let shipports = [mainMilitaryShipport, mainCivicShipport, generalShipport]
+        shipports.forEach { shipport in
+            print("\(shipport)")
+        }
     }
 
 
