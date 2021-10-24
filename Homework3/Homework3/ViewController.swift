@@ -38,6 +38,14 @@ class ViewController: UIViewController {
         shipports.forEach { shipport in
             print("\(shipport)")
         }
+
+        let imagesLoader = ImageLoader()
+        let loaders = [AnyLoader(imagesLoader)]
+
+        loaders.map { $0.load { result in
+            if case let .success(data) = result { print(data) }
+        }
+        }
     }
 
 

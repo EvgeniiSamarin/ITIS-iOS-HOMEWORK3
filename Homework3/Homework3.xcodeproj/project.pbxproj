@@ -25,6 +25,10 @@
 		7D82C6F42725C839007A04F7 /* MilitaryShipport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82C6F32725C839007A04F7 /* MilitaryShipport.swift */; };
 		7D82C6F62725C8DA007A04F7 /* CivicShipport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82C6F52725C8DA007A04F7 /* CivicShipport.swift */; };
 		7D82C6F82725E028007A04F7 /* AnyShipport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82C6F72725E028007A04F7 /* AnyShipport.swift */; };
+		7D82C6FB2725F699007A04F7 /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82C6FA2725F698007A04F7 /* LoaderProtocol.swift */; };
+		7D82C6FD2725F6B6007A04F7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82C6FC2725F6B6007A04F7 /* Result.swift */; };
+		7D82C7062725F869007A04F7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82C7052725F869007A04F7 /* ImageLoader.swift */; };
+		7D82C7082725F873007A04F7 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D82C7072725F873007A04F7 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		7D82C6F32725C839007A04F7 /* MilitaryShipport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilitaryShipport.swift; sourceTree = "<group>"; };
 		7D82C6F52725C8DA007A04F7 /* CivicShipport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CivicShipport.swift; sourceTree = "<group>"; };
 		7D82C6F72725E028007A04F7 /* AnyShipport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyShipport.swift; sourceTree = "<group>"; };
+		7D82C6FA2725F698007A04F7 /* LoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
+		7D82C6FC2725F6B6007A04F7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7D82C7052725F869007A04F7 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		7D82C7072725F873007A04F7 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +125,7 @@
 		7D82C6B227257712007A04F7 /* Homework3 */ = {
 			isa = PBXGroup;
 			children = (
+				7D82C6F92725F66E007A04F7 /* AssociatedTypesWithPrivateClasses */,
 				7D82C6E82725C5C2007A04F7 /* AssociatedTypes */,
 				7D82C6E32725B03E007A04F7 /* ArrayStructure */,
 				7D82C6B327257712007A04F7 /* AppDelegate.swift */,
@@ -168,6 +177,25 @@
 				7D82C6F72725E028007A04F7 /* AnyShipport.swift */,
 			);
 			path = AssociatedTypes;
+			sourceTree = "<group>";
+		};
+		7D82C6F92725F66E007A04F7 /* AssociatedTypesWithPrivateClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7D82C7022725F75E007A04F7 /* Model */,
+				7D82C6FA2725F698007A04F7 /* LoaderProtocol.swift */,
+				7D82C7052725F869007A04F7 /* ImageLoader.swift */,
+			);
+			path = AssociatedTypesWithPrivateClasses;
+			sourceTree = "<group>";
+		};
+		7D82C7022725F75E007A04F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D82C6FC2725F6B6007A04F7 /* Result.swift */,
+				7D82C7072725F873007A04F7 /* Image.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,13 +330,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D82C6B827257712007A04F7 /* ViewController.swift in Sources */,
+				7D82C7082725F873007A04F7 /* Image.swift in Sources */,
 				7D82C6EE2725C641007A04F7 /* Shuttle.swift in Sources */,
 				7D82C6E72725B475007A04F7 /* Array.swift in Sources */,
 				7D82C6B427257712007A04F7 /* AppDelegate.swift in Sources */,
+				7D82C6FD2725F6B6007A04F7 /* Result.swift in Sources */,
 				7D82C6B627257712007A04F7 /* SceneDelegate.swift in Sources */,
 				7D82C6F82725E028007A04F7 /* AnyShipport.swift in Sources */,
+				7D82C6FB2725F699007A04F7 /* LoaderProtocol.swift in Sources */,
 				7D82C6F02725C6FD007A04F7 /* Shipport.swift in Sources */,
 				7D82C6EC2725C604007A04F7 /* Gunship.swift in Sources */,
+				7D82C7062725F869007A04F7 /* ImageLoader.swift in Sources */,
 				7D82C6E52725B059007A04F7 /* ArrayProtocol.swift in Sources */,
 				7D82C6EA2725C5DD007A04F7 /* ShipProtocol.swift in Sources */,
 				7D82C6F62725C8DA007A04F7 /* CivicShipport.swift in Sources */,
